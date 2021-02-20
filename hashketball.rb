@@ -231,4 +231,3 @@ def player_numbers(team_name)
   scored_points
   #binding.pry
   end
-  
