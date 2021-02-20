@@ -228,6 +228,6 @@ def player_numbers(team_name)
         end
 
       end
-  scored_points
+  player_number_collection
   #binding.pry
   end
