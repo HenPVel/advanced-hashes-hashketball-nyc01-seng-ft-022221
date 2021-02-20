@@ -263,7 +263,7 @@ player_statistics=""
     game_hash[:home][:players].each do |index|
       shoe_sizes<<index[:shoe]
       corresponding_number_of_rebounds<<index[:rebounds]
-      
+
     end
 
     game_hash[:away][:players].each do |index2|
