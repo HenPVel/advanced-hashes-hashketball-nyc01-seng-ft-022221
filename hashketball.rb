@@ -245,7 +245,7 @@ def player_numbers(team_name)
 
         game_hash[:away][:players].each do |index2|
           if index2[:player_name]==player_name
-            scored_points=index2[:points]
+            player_statistics=index2
           end
 
         end
