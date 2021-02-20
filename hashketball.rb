@@ -231,3 +231,6 @@ def player_numbers(team_name)
   player_number_collection
   #binding.pry
   end
+
+  def player_stats(player_name)
+  end
