@@ -252,3 +252,5 @@ def player_numbers(team_name)
     player_statistics
     #binding.pry
     end
+
+  def big_shoe_rebounds
