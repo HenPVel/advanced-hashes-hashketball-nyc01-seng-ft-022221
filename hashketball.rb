@@ -223,8 +223,8 @@ def player_numbers(team_name)
       end
 
       game_hash[:away][:players].each do |index2|
-        if index2[:player_name]==player_name
-          scored_points=index2[:points]
+        if game_hash[:away][:team_name]==team_name
+          player_number_collection << index2[:number]
         end
 
       end
