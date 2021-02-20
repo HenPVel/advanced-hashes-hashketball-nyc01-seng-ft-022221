@@ -210,3 +210,25 @@ teams_playing=Array.new
   teams_playing<< game_hash[:away][:team_name]
 
 end
+
+def player_numbers(team_name)
+
+  player_number_collection=[]
+
+      game_hash[:home][:players].each do |index|
+        if game_hash[:home][:team_name]==team_name
+          player_number_collection << index[:number]
+        end
+
+      end
+
+      game_hash[:away][:players].each do |index2|
+        if index2[:player_name]==player_name
+          scored_points=index2[:points]
+        end
+
+      end
+  scored_points
+  #binding.pry
+  end
+  
