@@ -253,4 +253,26 @@ def player_numbers(team_name)
     #binding.pry
     end
 
-  def big_shoe_rebounds
+def big_shoe_rebounds
+
+shoe_sizes=[]
+corresponding_number_of_rebounds=[]
+
+player_statistics=""
+
+    game_hash[:home][:players].each do |index|
+      shoe_sizes<<index[:shoe]
+      corresponding_number_of_rebounds<<index[:rebounds]
+      
+    end
+
+    game_hash[:away][:players].each do |index2|
+      shoe_sizes<<index2[:shoe]
+      corresponding_number_of_rebounds<<index2[:rebounds]
+
+    end
+
+index_to_find=shoe_sizes.find_index(shoe_sizes.max)
+corresponding_number_of_rebounds[index_to_find]
+
+end
