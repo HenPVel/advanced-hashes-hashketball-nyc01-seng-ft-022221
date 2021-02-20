@@ -249,6 +249,6 @@ def player_numbers(team_name)
           end
 
         end
-    scored_points
+    player_statistics
     #binding.pry
     end
